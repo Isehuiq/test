@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="登入頁面"
+        android:layout_weight="1.5"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:background="#00B0B0"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="帳號"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="密碼"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="登入"
+        android:background="#008080"
+        android:layout_margin="10dp"
+        android:onClick="login"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="註冊帳號"
+        android:textColor="#008080"
+        android:background="#ffffff"
+        android:onClick="SwitchToRegisterPage"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5" />
+
+</LinearLayout>

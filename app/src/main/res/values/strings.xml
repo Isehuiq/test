@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">test</string>
+    <string-array name="country">
+        <item>所有幣別</item>
+        <item>美元(USD)</item>
+        <item>港幣(HKD)</item>
+        <item>日幣(JPY)</item>
+        <item>歐元(EUR)</item>
+        <item>人民幣(CNY)</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

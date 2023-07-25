@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/itemView"
+    android:background="@drawable/rectangle">
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="美元USD"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="10sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10sp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="項目"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="銀行買進"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="銀行賣出"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10sp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="即期匯率"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/buyin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="30.5900"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/buyout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="30.7100"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
