@@ -209,8 +209,7 @@ public class MainActivity extends AppCompatActivity {
         sensorManager.unregisterListener(mySensorEventListener);
     }
     public void sendDataToBackend(UserData userData) {
-        if (!userData.getStartXFirst().equals(userData.getCurrentXLast())
-                && !userData.getStartYFirst().equals(userData.getCurrentYLast()))
+        if (!isPossibleClick(userData))
         {
             JSONObject jsonObject = new JSONObject();
             try {
@@ -282,6 +281,8 @@ public class MainActivity extends AppCompatActivity {
                 String jsonString = jsonObject.toString();
                 Log.v("Lin", "json " + jsonString);
             */
+                String jsonString = jsonObject.toString();
+                Log.v("Lin", "json " + jsonString);
             } catch (JSONException e) {
                 throw new RuntimeException(e);
             }
@@ -844,5 +845,8 @@ public class MainActivity extends AppCompatActivity {
                 isFirst = true;
                 break;
         }
+    }
+    public  boolean isPossibleClick(UserData userData) {
+        return (userData.getDistance() < 10) && (userData.getDuration() < 100L);
     }
 }
